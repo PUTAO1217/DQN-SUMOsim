@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+
+    <vType id="traditionCar"  color='1,1,0' carFollowModel= 'IDM' actionStepLength='1' tau='1.4' speedDev='0' accel='5' decel='2' length='5' maxSpeed='20.00'/>
+    <route id="W_E" edges="-E0 E2" />
+    <route id="W_N" edges="-E0 E1" />
+    <route id="W_S" edges="-E0 E3" />
+    <route id="E_W" edges="-E2 E0" />
+    <route id="E_S" edges="-E2 E3" />
+    <route id="E_N" edges="-E2 E1" />
+    <route id="N_E" edges="-E1 E2" />
+    <route id="N_W" edges="-E1 E0" />
+    <route id="N_S" edges="-E1 E3" />
+    <route id="S_N" edges="-E3 E1" />
+    <route id="S_E" edges="-E3 E2" />
+    <route id="S_W" edges="-E3 E0" />
+
+
+    <flow id="a13" color="1,1,0" begin="0" end="7200" vehsPerHour="1200" type="traditionCar" route="N_S">
+    </flow>
+
+    <flow id="a31" color="1,1,0" begin="0" end="7200" vehsPerHour="1200" type="traditionCar" route="S_N">
+    </flow>
+
+    <flow id="a12" color="1,1,0" begin="0" end="7200" vehsPerHour="800" type="traditionCar" route="N_E">
+    </flow>
+
+    <flow id="a10" color="1,1,0" begin="0" end="7200" vehsPerHour="200" type="traditionCar" route="N_W">
+    </flow>
+
+    <flow id="a32" color="1,1,0" begin="0" end="7200" vehsPerHour="800" type="traditionCar" route="S_E">
+    </flow>
+
+    <flow id="a30" color="1,1,0" begin="0" end="7200" vehsPerHour="200" type="traditionCar" route="S_W">
+    </flow>
+
+    <flow id="a02" color="1,1,0" begin="0" end="7200" vehsPerHour="1000" type="traditionCar" route="W_E">
+    </flow>
+
+    <flow id="a20" color="1,1,0" begin="0" end="7200" vehsPerHour="1000" type="traditionCar" route="E_W">
+    </flow>
+
+    <flow id="a01" color="1,1,0" begin="0" end="7200" vehsPerHour="640" type="traditionCar" route="W_N">
+    </flow>
+
+    <flow id="a03" color="1,1,0" begin="0" end="7200" vehsPerHour="160" type="traditionCar" route="W_S">
+    </flow>
+
+    <flow id="a21" color="1,1,0" begin="0" end="7200" vehsPerHour="640" type="traditionCar" route="E_N">
+    </flow>
+
+    <flow id="a23" color="1,1,0" begin="0" end="7200" vehsPerHour="160" type="traditionCar" route="E_S">
+    </flow>
+
+</routes>
